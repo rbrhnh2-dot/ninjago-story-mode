@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: ninjago-open-world
-    runtime: node
-    plan: free
-    buildCommand: npm install
-    startCommand: npm start
-    healthCheckPath: /
