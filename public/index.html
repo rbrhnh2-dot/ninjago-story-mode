@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#10131d"><title>NINJAGO: Rise of the Ninja</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+</head>
+<body>
+<div id="loading"><div class="logo">NINJAGO</div><div>Loading the realms…</div></div>
+<div id="hud">
+ <div class="topbar"><div class="brand">NINJAGO <small>RISE OF THE NINJA</small></div><div id="mode">STORY MODE</div><div id="health"><span></span></div></div>
+ <div class="mission"><small id="chapter">PILOT • CHAPTER 1</small><strong id="missionTitle">The First Spinjitzu Lesson</strong><p id="missionText">Find Sensei Wu at the monastery.</p></div>
+ <div id="toast"></div>
+ <div class="bottom-left"><div id="location">SPINJITZU MONASTERY</div><div class="hint">Explore • Train • Protect the city</div></div>
+ <div class="bottom-right"><button id="modeBtn">SANDBOX</button><button id="mapBtn">MAP</button></div>
+</div>
+<div id="cutscene" class="hidden"><div class="cut-label">NINJAGO • STORY</div><div id="cutText"></div><button id="skipCut">SKIP</button></div>
+<div id="mapPanel" class="hidden"><h2>REALMS & DISTRICTS</h2><div id="mapList"></div><button id="closeMap">CLOSE</button></div>
+<div id="controls">
+ <div id="stick"><div id="nub"></div></div>
+ <div class="actions"><button id="attack">ATTACK</button><button id="spin">SPINJITZU</button><button id="jump">JUMP</button><button id="interact">ACTION</button></div>
+</div>
+<div id="desktopHelp">WASD move · Mouse drag camera · Space jump · J attack · K spinjitzu · E interact · M map · B sandbox</div>
+<script type="module" src="game.js"></script>
+</body></html>
