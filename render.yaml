@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ninjago-3d
+    runtime: static
+    buildCommand: echo "no build needed"
+    staticPublishPath: .
+    headers:
+      - path: /sw.js
+        name: Cache-Control
+        value: no-cache
+      - path: /index.html
+        name: Cache-Control
+        value: no-cache
