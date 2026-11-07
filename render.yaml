@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: ninjago-3d
-    runtime: static
-    buildCommand: echo "no build needed"
-    staticPublishPath: .
